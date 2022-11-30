@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDEFFF"
+    android:orientation="vertical"
+    tools:context=".AltaTernera">
+
+    <Spinner
+        android:id="@+id/spinnerTipoParto"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraTipoParto"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraTipoParto" />
+
+    <Spinner
+        android:id="@+id/spinnerRaza"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraRaza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraRaza" />
+
+    <TextView
+        android:id="@+id/textTituloMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#77C3F6"
+        android:paddingVertical="10dp"
+        android:text="@string/AltaTernera_Titulo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTerneraCaravanaT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16dp"
+        android:text="Caravana Tambo"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTerneraCaravanaSnis"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTerneraCaravanaSnis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16dp"
+        android:text="Caravana Snis"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTerneraGuachera"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTerneraGuachera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16dp"
+        android:text="Guachera"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTerneraIdentificador"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTerneraIdentificador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:textSize="16dp"
+        android:text="Identificadores de los padres"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTerneraMadre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTerneraMadre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16dp"
+        android:text="Madre"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTerneraPadre"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTerneraPadre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16dp"
+        android:text="Padre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTituloMenu" />
+
+    <TextView
+        android:id="@+id/textViewTerneraPesoAlNacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"
+        android:text="Peso al nacer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTerneraFechaNacimiento" />
+
+    <TextView
+        android:id="@+id/textViewTerneraTipoParto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"
+        android:text="Tipo de parto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTerneraPesoAlNacer" />
+
+    <TextView
+        android:id="@+id/textViewTerneraFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"
+        android:text="Fecha de nacimiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTerneraRaza" />
+
+    <TextView
+        android:id="@+id/textViewTerneraRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:textSize="16dp"
+        android:text="Raza"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTerneraPadre" />
+
+    <EditText
+        android:id="@+id/editTextCaravanaTambo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraCaravanaT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraCaravanaT" />
+
+    <EditText
+        android:id="@+id/editTextCaravanaSnis"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraCaravanaSnis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraCaravanaSnis" />
+
+    <Spinner
+        android:id="@+id/spinnerGuachera"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraGuachera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraGuachera" />
+
+    <EditText
+        android:id="@+id/editTextIdMadre"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraMadre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraMadre" />
+
+    <EditText
+        android:id="@+id/editTextIdPadre"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraPadre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraPadre" />
+
+    <EditText
+        android:id="@+id/editTextFechaNac"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraFechaNacimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraFechaNacimiento" />
+
+    <EditText
+        android:id="@+id/editTextPesoAlNacer"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTerneraPesoAlNacer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTerneraPesoAlNacer" />
+
+    <Button
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTerneraTipoParto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
