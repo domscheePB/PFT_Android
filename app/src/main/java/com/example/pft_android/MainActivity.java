@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         terneraViewModel = new ViewModelProvider(this, (ViewModelProvider.Factory) new TerneraFactory(getApplication())).get(TerneraViewModel.class);
 
         terneraViewModel.getTerneras().observe(this, libros -> {
-            adapter.submitList(libros);
+            //adapter.submitList(libros);
         });
     }
 
