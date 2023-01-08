@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">PFT_Android</string>
     <string name="Inicio_Usuario">Nombre de Usuario</string>
+    <string name="prueba_cambio">Pablo se la come</string>
     <string name="Inicio_Titulo">Sistema de Gestión de Tambo</string>
     <string name="Inicio_Contrasena">Contraseña</string>
     <!-- TODO: Remove or change this placeholder text -->

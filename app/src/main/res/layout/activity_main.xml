@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginBottom="80dp"
-        android:text="@string/Inicio_Usuario"
+        android:text="@string/prueba_cambio"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextNombreUsuario"
