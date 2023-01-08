@@ -8,4 +8,5 @@
     <string name="Menu_Titulo">Menu de Funcionalidades</string>
     <string name="Inicio_IniciarSesion">Iniciar Sesión</string>
     <string name="AltaTernera_Titulo">Alta de Terneras</string>
+    <string name="ListaTernera_Titulo">Lista de Terneras</string>
 </resources>
